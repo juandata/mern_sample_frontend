@@ -17,7 +17,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    const url = process.env.REACT_APP_NODE_ENV === 'development' ? 'http://localhost:4000/players' : 'https://mern-sample-backend.onrender.com';
+    const url = process.env.REACT_APP_NODE_ENV === 'development' ? 'http://localhost:4000/players' : 'https://mern-sample-backend.onrender.com/players';
 
     axios.get(url)
       .then((Response) => {
